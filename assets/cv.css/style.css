@@ -1,0 +1,31 @@
+		*{
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+/*메인메뉴*/
+.mainmenu {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.mainmenu a{
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+.cvtopainting {position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -20px;
+}
+
+.cvtopainting img {width: 150px;
+    height: auto;}
+.cvtopainting span {position: absolute;}
+
+@media screen and (max-width: 704px) {
+}

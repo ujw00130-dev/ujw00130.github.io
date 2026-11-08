@@ -1,0 +1,19 @@
+		*{
+ margin : 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.menu a{
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 704px) {
+}

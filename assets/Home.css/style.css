@@ -11,9 +11,25 @@
 }
 
 .mainmenu a{
-	font-size: 20px;
+	font-size: 18px;
 	color: black;
 	text-decoration: none;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* 배경 이미지 여기서 중요한 건 z-index야.
+- 숫자가 작으면 뒤로 감.
+- 숫자가 크면 앞으로 나옴.*/
+.background {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    z-index: 0;
+}
+.background img {
+    width: 600px;
 }
 
 .artworks {
@@ -23,24 +39,12 @@
     align-items: flex-start;
     width: 600px;
 }
-
-/* 배경 이미지 여기서 중요한 건 z-index야.
-- 숫자가 작으면 뒤로 감.
-- 숫자가 크면 앞으로 나옴.*/
-
-.background {
-    position: absolute;
-    width: 600px;
-    height: auto;
-    z-index: 0;
-}
-
 /* 아이콘과 텍스트 position: relative;	아이콘의 위치를 상대적으로 조절할 수 있음
 z-index: 1;	배경보다 앞에 표시
 display: flex;	이미지와 텍스트를 유연하게 배치
 flex-direction: column;	이미지 위, 텍스트 아래로 세로 정렬
 align-items: center;	이미지와 텍스트를 가운데 정렬*/
-.artworks a {
+.artworks a:not(.background) {
     position: relative;
     z-index: 1;
     display: flex;
@@ -48,21 +52,22 @@ align-items: center;	이미지와 텍스트를 가운데 정렬*/
     align-items: center;
     text-decoration: none;
     color: black;
-    top: 150px;
-    left: 460px;
+    top:150px;
+    left: 450px;
 }
 
-/* 문 이미지 */
-.artworks a img {
+
+.door img {
     width: 100px;
+    height: auto;
 }
 
-/* 텍스트 */
+
 .artworks a p {
     margin-top: -10px;
     font-size: 12px;
 }
-/*Dummy*/
+
 .dummy {
     position: absolute;
     top: 700px;
